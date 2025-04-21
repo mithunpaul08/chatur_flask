@@ -17,12 +17,13 @@ llm = build_llm_proxy(
     api_key=OPENAI_API_KEY,
 )
 
-
-@app.route('/invoke', methods=['POST'])
+@app.route('/invoke', methods=['GET', 'POST'])
 def invoke():
-    data = request.json
-    prompt = data.get("prompt")
-    
+    if request.method == 'GET':
+        prompt = request.args.get("prompt")
+    else:
+        data = request.json
+        prompt = data.get("prompt")
 
     if not prompt:
         return jsonify({"error": "No prompt provided"}), 400
@@ -32,6 +33,7 @@ def invoke():
         return jsonify({"response": str(response)})
     except Exception as e:
         return jsonify({"error": str(e)}), 500
+
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
