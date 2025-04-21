@@ -30,7 +30,7 @@ def invoke():
 
     try:
         response = llm.invoke(prompt)
-        return jsonify({"response": str(response)})
+        return jsonify({"response": str(response.content)})
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
