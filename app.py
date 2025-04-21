@@ -6,13 +6,15 @@ app = Flask(__name__)
 
 llm_url = 'https://llm-api.cyverse.ai'
 api_key = os.environ.get('API_KEY')
+OPENAI_API_KEY = os.environ.get('OPENAI_API_KEY')
+
 
 llm = build_llm_proxy(
     model="anvilgpt/llama3.1:latest",
     url=llm_url,
     engine="OpenAI",
     temperature=0.9,
-    api_key=api_key,
+    api_key=OPENAI_API_KEY,
 )
 
 message = llm.invoke("what is the largest wildfire in California")
