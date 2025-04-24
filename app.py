@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 llm_url = 'https://llm-api.cyverse.ai'
 api_key = os.environ.get('API_KEY')
-OPENAI_API_KEY = os.environ.get('AIAI_API_KEY')
+OPENAI_API_KEY = os.environ.get('OPENAI_API_KEY')
 
 @app.route('/invoke', methods=['GET', 'POST'])
 def invoke():
