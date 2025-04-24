@@ -31,7 +31,9 @@ function retrieveResults() {
 }
 
 function callPythonScript(prompt, model) {
-  const url = 'https://chaturflask-production.up.railway.app/invoke';
+  // one which takes both model and prompt  : https://web-production-ffdbc.up.railway.app/invoke
+  // one which takes only  prompt  : https://chaturflask-production.up.railway.app/invoke
+  const url = 'https://web-production-ffdbc.up.railway.app/invoke';
 
   const payload = {
     prompt: prompt,
