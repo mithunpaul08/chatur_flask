@@ -29,9 +29,15 @@ function retrieveResults() {
       try {
         const response = callPythonScript(prompt, model); // Pass modified prompt & model
         const cleaned = response.replace(/\n/g, ' ').trim(); // Clean \n
-        sheet.getRange(row, col).setValue(cleaned); // Write to cell
+        sheet.getRange(row, col).setValue(cleaned); // Write full response to cell
+
+        // Extract semantic overlap percentage
+        const percentageMatch = cleaned.match(/(\d+(\.\d+)?)%/);
+        const percentage = percentageMatch ? percentageMatch[1] : "error";
+        sheet.getRange(3, col).setValue(percentage); // Write percentage to row 3
       } catch (error) {
         sheet.getRange(row, col).setValue("error"); // Write "error" to cell if an exception occurs
+        sheet.getRange(3, col).setValue("error"); // Write "error" to row 3 if an exception occurs
       }
     }
   }
