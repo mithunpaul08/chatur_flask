@@ -6,12 +6,9 @@ List of models that can be accessed with the key ending in "sk*****JOA" (48 mode
 
 ## Supported LLM Models
 
-- info_523_2014fall/gpt-4o
 - gpt-4o
-- dsi_students/gpt-4o
-- anvilgpt/llama3:70b
 - gpt-4
-- info_523_2014fall
+- anvilgpt/llama3:70b
 - nrp/phi3
 - anvilgpt/gemma:latest
 - nrp/olmo
@@ -20,20 +17,17 @@ List of models that can be accessed with the key ending in "sk*****JOA" (48 mode
 - nrp/gorilla
 - gpt-4o-mini
 - Llama-3.3-70B-Instruct-quantized
-- dsi_students/gpt-4o-mini
 - gpt-4-turbo
 - Llama-3.2-11B-Vision-Instruct
 - Qwen2.5-Coder-32B-Instruct
 - anvilgpt/codegemma:latest
 - js2/Llama-3.3-70B-Instruct-FP8-Dynamic
-- dsi_students
 - anvilgpt/llama3.1:latest
 - js2/DeepSeek-R1
 - gemma-3-12b-it
 - anvilgpt/llama3:latest
 - anvilgpt/llama2:13b
 - js2/llama-4-scout
-- info_523_2014fall/gpt-4o-mini
 - anvilgpt/llama2:latest
 - anthropic/claude-instant-1
 - anthropic/claude-instant-1.2
