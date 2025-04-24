@@ -9,7 +9,7 @@ function onOpen() {
 function retrieveResults() {
   const sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
   const lastRow = 35;
-  const startCol = 2; // column B
+  const startCol = 3; // column C
   const lastCol = sheet.getLastColumn(); // assumes header row is filled with model names
 
   // Loop through each row (prompt in column A)
