@@ -1,8 +1,8 @@
 # chatur_flask
 
-- Total number of models accessible using AIVerde: 44 +
+- Total number of models accessible using AIVerde:
 
-List of models that can be accessed with the key ending in "sk*****JOA" (48 models)
+List of models that can be accessed with the key ending in "sk*****JOA" 
 
 ## Supported LLM Models
 
