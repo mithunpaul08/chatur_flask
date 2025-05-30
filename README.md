@@ -1,4 +1,22 @@
-# chatur_flask
+# Compare results of 40+ models side to side and overlap with your gold answer
+
+Run it with:
+`streamlit run asynchronous_python_streamlit.py`
+
+
+You can see the GUI in: http://localhost:8501
+
+(if you want a public url refer command line response)
+
+This GUI will let you do/add :
+
+-  Your prompt/question
+- a gold answer you want to provide
+- list of LLMs you want to respond
+Click: Compare LLms button
+
+
+
 
 - Total number of models accessible using AIVerde:
 
@@ -44,9 +62,3 @@ List of models that can be accessed with the key ending in "sk*****JOA"
 - anthropic/claude-3-7-sonnet-latest
 - anthropic/claude-3-7-sonnet-20250219
 - anthropic/claude-3-5-sonnet-20241022
-
-
-To access the same from web browswer paste this command
-
-`
-https://web-production-ffdbc.up.railway.app/invoke?prompt=who%20is%20the%20president%20of%20usa.compare your answer with the gold answer that donald trump is the current president of united states. and give me a semantic overlap percentage value&model=gpt-4o`
