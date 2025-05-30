@@ -1,4 +1,22 @@
-# chatur_flask
+# Compare results of 40+ models side to side and overlap with your gold answer
+
+Run it with:
+`streamlit run asynchronous_python_streamlit.py`
+
+
+You can see the GUI in: http://localhost:8501
+
+(if you want a public url refer command line response)
+
+This GUI will let you do/add :
+
+-  Your prompt/question
+- a gold answer you want to provide
+- list of LLMs you want to respond
+Click: Compare LLms button
+
+
+
 
 - Total number of models accessible using AIVerde:
 
